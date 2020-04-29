@@ -34,6 +34,6 @@ class MovieViewModel extends ViewModel
         ])->only([
             'poster_path', 'id', 'genres', 'title', 'vote_average', 'overview', 'release_date', 'credits' ,
             'videos', 'images', 'crew', 'cast', 'images'
-        ])->dump();
+        ]);
     }
 }
