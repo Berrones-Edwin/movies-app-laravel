@@ -4,18 +4,20 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class MovieCard extends Component
+class TvCard extends Component
 {
-    public $movie;
+
+    public $tv;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($movie)
+    public function __construct($tv)
     {
         //
-        $this->movie = $movie;
+
+        $this->tv = $tv;
     }
 
     /**
@@ -25,6 +27,6 @@ class MovieCard extends Component
      */
     public function render()
     {
-        return view('components.movie-card');
+        return view('components.tv-card');
     }
 }
